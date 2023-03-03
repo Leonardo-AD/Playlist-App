@@ -7,6 +7,7 @@ export default {
   currentAudio: {},
   currentPlaying: 0,
   isPlaying: false,
+  
   start() {
     elements.get.call(this);
     this.update();
@@ -22,6 +23,26 @@ export default {
     this.isPlaying = false;
     this.audio.pause();
     this.playPause.innerText = "play_arrow";
+  },
+
+  previousMusic() {
+
+  },
+
+  nextMusic() {
+    if(this.currentPlaying == this.audioData.length){ 
+      this.restart();
+      this.play();
+    }
+    else{
+      this.isPlaying = false;
+      this.audio.pause();
+
+      this.currentPlaying++;
+
+      this.update();
+      this.play();
+    }
   },
 
   togglePlayPause() {

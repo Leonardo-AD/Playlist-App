@@ -6,6 +6,8 @@ export default {
     this.title = document.querySelector(".card-content h5");
     this.artist = document.querySelector(".artist");
     this.playPause = document.querySelector("#play-pause");
+    this.skipPrevious = document.querySelector("#skip-previous");
+    this.skipNext = document.querySelector("#skip-next");
     this.mute = document.querySelector("#mute");
     this.volume = document.querySelector("#vol-control");
     this.seekbar = document.querySelector("#seekbar");
@@ -19,6 +21,8 @@ export default {
     this.audio.onended = () => this.next();
     this.audio.ontimeupdate = () => this.timeUpdate();
     this.playPause.onclick = () => this.togglePlayPause();
+    this.skipPrevious.onclick = () => this.previousMusic();
+    this.skipNext.onclick = () => this.nextMusic();
     this.mute.onclick = () => this.toggleMute();
     this.volume.oninput = () => this.setVolume(this.volume.value);
     this.volume.onchange = () => this.setVolume(this.volume.value);
