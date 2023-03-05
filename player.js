@@ -26,7 +26,18 @@ export default {
   },
 
   previousMusic() {
+    if(this.currentPlaying == 0){
+      this.setSeek(0);
+    }
+    else{
+      this.isPlaying = false;
+      this.audio.pause();
 
+      this.currentPlaying--;
+
+      this.update();
+      this.play();
+    }
   },
 
   nextMusic() {
@@ -93,5 +104,32 @@ export default {
   restart() {
     this.currentPlaying = 0;
     this.update();
-  }
+  },
 };
+
+// Getting keyboard click  
+const keyboard = {
+  'k' : 'play-pause',
+  'K' : 'play-pause',
+  'L' : 'skip-next',
+  'l' : 'skip-next',
+  'j' : 'skip-previous',
+  'J' : 'skip-previous',
+  'm' : 'mute',
+  'M' : 'mute',
+  'Enter' : 'play-pause',
+  'PageUp' : 'vol-control',
+  'PageDown' : 'vol-control',
+}
+  
+const mappingKeyboard = (event) => {
+    
+  const key = event.key;
+  const allowedKey = () => Object.keys(keyboard).indexOf(key) !== -1;
+
+  if(allowedKey()){
+    document.getElementById(keyboard[key]).click(); 
+  } 
+}
+
+document.addEventListener('keydown', mappingKeyboard);  
