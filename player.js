@@ -122,8 +122,8 @@ const keyboard = {
   'm' : 'mute',
   'M' : 'mute',
   'Enter' : 'play-pause',
-  'PageUp' : 'vol-control',
-  'PageDown' : 'vol-control',
+  'ArrowUp' : 'vol-control',
+  'ArrowDown' : 'vol-control',
 }
   
 const mappingKeyboard = (event) => {
