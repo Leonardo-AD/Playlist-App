@@ -37,6 +37,7 @@ export default {
 
       this.update();
       this.play();
+      this.mute.innerText = this.audio.muted ? "volume_off" : "volume_up";
     }
   },
 
@@ -53,6 +54,7 @@ export default {
 
       this.update();
       this.play();
+      this.mute.innerText = this.audio.muted ? "volume_off" : "volume_up";
     }
   },
 
