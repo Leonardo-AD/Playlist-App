@@ -45,6 +45,7 @@ export default {
     if(this.currentPlaying == this.audioData.length){ 
       this.restart();
       this.play();
+      this.mute.innerText = this.audio.muted ? "volume_off" : "volume_up";
     }
     else{
       this.isPlaying = false;
@@ -76,6 +77,7 @@ export default {
     if (this.currentPlaying == this.audioData.length) this.restart();
     this.update();
     this.play();
+    this.mute.innerText = this.audio.muted ? "volume_off" : "volume_up";
   },
 
   setVolume(value) {
