@@ -48,16 +48,28 @@ h4{
 
 /* Technical adjustments :) */
 .card .card-image a:nth-child(1){ 
-	margin-right: 8.5rem;
+	margin-right: 8.45rem;
+	/* position: relative;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
 }
 
 .card .card-image a:nth-child(2){ 
-	margin-right: 12.5rem;
-	background-color: var(--primary);
+	margin-right: 12.8rem;
+	/* position: relative;
+	top: 95%;
+	left: 17%;
+	transform: translate(-50%, -50%); */
+	background-color: var(--primary);	
 }
 
 .card .card-image a:nth-child(3){ 
-	margin-right: 5.5rem;
+	margin-right: 5.2rem;
+	/* position: relative;
+	top: 95%;
+	left: 37%;
+	transform: translate(-50%, -50%); */
 	background-color: var(--primary);
 }
 
