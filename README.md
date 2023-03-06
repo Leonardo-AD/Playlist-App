@@ -18,7 +18,7 @@
 
 <p>The interface</p>
 
-<img src="./images/interface01.png" width="700"/> 
+<img src="./interface01.png" width="700"/> 
 
 ## Technologies
 
