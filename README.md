@@ -1,6 +1,6 @@
 <h1 align='center'>Playlist-App</h1>
 
-<p>Playlist App is a project that I made on Rockeseat's YouTube channel. Now I'm creating some improvements using only HTML5, CSS3 and JavaScript.</p>
+<p>Playlist App is a project that I made through Rockeseat. In this application using only HTML5, CSS3 and JavaScript.</p>
 
 ## Features Developed
 
